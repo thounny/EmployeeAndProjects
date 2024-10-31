@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee and Projects</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h3>Select an Employee</h3>
+
+        <label for="employeeDropdown">Employees:</label>
+        <select id="employeeDropdown" class="form-control"></select>
+
+        <h4>Employee Details</h4>
+        <table class="table" id="employeeDetailsTable">
+            <tbody id="employeeDetailsBody">
+                <!-- Rows for employee details will be added dynamically here -->
+            </tbody>
+        </table>
+
+        <h4>Projects Assigned</h4>
+        <table class="table table-striped" id="projectsTable">
+            <thead>
+                <tr>
+                    <th>Project ID</th>
+                    <th>Project Name</th>
+                </tr>
+            </thead>
+            <tbody id="projectsTableBody">
+                <!-- Rows for projects will be added dynamically here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
